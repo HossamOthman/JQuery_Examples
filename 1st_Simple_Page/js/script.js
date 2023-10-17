@@ -1,9 +1,11 @@
+$('.fag_a').hide();
+
 jQuery(document).ready(function() {
     jQuery('.box-close').click(function(){
         // there is also: jQuery('.box').hide(); ..slideUp(); ..fadeOut();
         jQuery(this).parents('.box').fadeOut();
     });
-    jQuery('.fag_a').hide();
+    
     jQuery('.fag_q').click(function() {
         jQuery(this).next('.fag_a').slideToggle()
     });

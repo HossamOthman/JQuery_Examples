@@ -49,7 +49,22 @@ h1 {
     color: #333;
 }
 
-.pointer {
-    color: purple;
-    cursor: pointer
+.fag_q {
+    color: rgb(31, 0, 31);
+    text-align: center;
+}
+
+.fag_q-pointer {
+    color: rgb(111, 0, 111);
+    cursor: pointer;
+}
+
+.icon {
+    float: left
+}
+
+.outer_link{
+    border: 5px solid #333;
+    padding: 25px;
+    text-align: center;
 }

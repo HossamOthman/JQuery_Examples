@@ -6,14 +6,25 @@ body {
 h1{
     text-align: center;
     font-size: 72px;
-    margin-top: 50px;
+    margin-top: 75px;
     margin-bottom: 100px;
 }
 .faq {
     width: 75%;
     margin: 0 auto;
-}
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    overflow: hidden;
 
+}
+.faq-item {
+    padding: 0 10px;
+    border: 1px solid #aaa
+}
+.faq-item__title:hover{
+    color: white;
+    cursor: pointer;
+}
 .faq-item__content{
     display: none;
 }

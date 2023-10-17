@@ -13,7 +13,13 @@ jQuery(document).ready(function() {
     jQuery('.fag_q').append('<span class="icon">>></span>')
 
     jQuery('#more').click(function() {
-        jQuery('#place-holder').load('more.html .more-items');
+        jQuery('#place-holder-1').load('more.html .more-items');
         return false;
     })
+    jQuery('#getData').click(function() {
+        jQuery('#place-holder-2').load('https://cors-anywhere.herokuapp.com/http://carnes.cc/code/ajax_example.txt', function(data, status){
+            console.log("Data: " + data + "\nStatus" + status)
+        });
+    })
+
 })

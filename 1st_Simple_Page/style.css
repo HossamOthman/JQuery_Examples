@@ -66,6 +66,7 @@ h1 {
 .outer_link{
     border: 5px solid #333;
     padding: 25px;
+    margin-bottom: 15px;
     text-align: center;
 }
 .fag_a {

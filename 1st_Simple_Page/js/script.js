@@ -1,5 +1,6 @@
 jQuery(document).ready(function() {
     jQuery('.box-close').click(function(){
-        jQuery('.box-close').slideUp();
+        // there is also: jQuery('.box').hide(); ..slideUp(); ..fadeOut();
+        jQuery(this).parents('.box').fadeOut();
     })
 })

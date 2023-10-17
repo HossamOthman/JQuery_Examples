@@ -1,0 +1,47 @@
+.container {
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 70%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 72px;
+}
+
+.box {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 15px;
+    border: 3px solid purple;
+    position: relative
+}
+
+.box-close {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: #333;
+}
+.box-close:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+.faq {
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: antiquewhite;
+    border: 1px dotted purple;
+}
+
+.pointer {
+    color: purple;
+    cursor: pointer
+}

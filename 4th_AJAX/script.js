@@ -21,7 +21,10 @@ $(document).ready(function() {
     $classic_get.on('click', () => {
         $.get('test.html', (data) => {
             $target.html(data);
+            alert('it went...')
         })
     });
+
+    
 
 });

@@ -27,14 +27,25 @@ body {
 }
 .functions{
     margin: 30px auto;
+    padding: 10px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    background-color: #333;
+}
+.functions .func-block{
+    width: 49%;
     padding: 10px;
     display: flex;
-    justify-content: space-evenly;
-    background-color: #ccc;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: antiquewhite;
 }
 .functions p{
     margin: 10px 0 30px;
-    background-color: #ccc;
+    font-size: larger;
 }
 .functions p span{
     color: darkgreen;
@@ -42,6 +53,7 @@ body {
 }
 .functions .load-btn{
     padding: 10px;
+    margin: 0 auto;
     width: 300px;
     background-color: #333;
     font-size: larger;

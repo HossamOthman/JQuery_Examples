@@ -76,3 +76,22 @@ body {
     padding: 10px 0 5px;
     color: green;
 }
+
+h2{
+    color: whitesmoke;
+    margin: 40px 0
+}
+#postForm{
+    margin: 0 5px;
+    padding: 20px;
+    background-color: antiquewhite;
+    width:100%;
+}
+#postForm input{
+    height: 30px;
+    padding: 5px 10px;
+}
+#postForm textarea{
+    height: 60px;
+    padding: 5px 10px;
+}

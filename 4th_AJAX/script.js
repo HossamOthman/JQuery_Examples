@@ -51,4 +51,23 @@ $(document).ready(function() {
             });
         });
     })
+
+    //////////// post form
+    $('#postForm').submit((e) => {
+        e.preventDefault();
+
+        var title = $('#title').val();
+        var body = $('#body').val();
+        var url = $(this).attr('action');
+
+        $.post(url, {
+            title: title,
+            body: body
+        }).done((data) => {
+            alert('Post sent!');
+            console.log(data)
+        });
+
+
+    })
 });

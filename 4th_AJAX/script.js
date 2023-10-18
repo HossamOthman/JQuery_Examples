@@ -25,6 +25,15 @@ $(document).ready(function() {
         })
     });
 
-    
+    //////////// Loading the json Document
+    $json_get = $('#json-get');
+
+    $json_get.on('click', () => {
+        $.getJSON('users.json', (data) => {
+            $.each(data, (i, user) => {
+                $target.append('<ul><li>'+ (i+1)+' - '+user.firstName+' '+ user.lastName+': ' +user.email +'</li></ul>')
+            })
+        })
+    });
 
 });

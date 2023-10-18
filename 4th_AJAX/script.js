@@ -36,4 +36,19 @@ $(document).ready(function() {
         })
     });
 
+    //////////// Loading the json Document fromn URL
+    $ajax_get = $('#ajax-get');
+
+    $ajax_get.on('click', () => {
+        $.ajax({
+            method: 'get',
+            url: 'https://jsonplaceholder.typicode.com/posts',
+            dataType: 'json'
+        }).done((data) => {
+            $.map(data, (post, i) => {
+                $target.append(`<h3> ${post.title}</h3>
+                <p>${post.body}</p>`)
+            });
+        });
+    })
 });

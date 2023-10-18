@@ -29,6 +29,7 @@ $(document).ready(function() {
     $json_get = $('#json-get');
 
     $json_get.on('click', () => {
+        $target.html('')
         $.getJSON('users.json', (data) => {
             $.each(data, (i, user) => {
                 $target.append('<ul><li>'+ (i+1)+' - '+user.firstName+' '+ user.lastName+': ' +user.email +'</li></ul>')
@@ -40,6 +41,7 @@ $(document).ready(function() {
     $ajax_get = $('#ajax-get');
 
     $ajax_get.on('click', () => {
+        $target.html('')
         $.ajax({
             method: 'get',
             url: 'https://jsonplaceholder.typicode.com/posts',

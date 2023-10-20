@@ -2,3 +2,35 @@
     margin: 50px auto;
     padding: 50px 25px;
 }
+
+#movies img, #movie img {
+    width: 100%;
+}
+#movies .col-md-3 {
+    
+}
+#movies .col-md-3 .well {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 15px;
+    background-color: #cccccc33;
+    border-radius: 5px;
+}
+
+#movies .col-md-3 img {
+    height: 275px;
+    object-fit: cover;
+}
+
+@media(min-width:767px){
+    #movies .col-md-3 .well {
+        height: 650px;
+    }
+    
+    #movies .col-md-3 img {
+        height: 475px;
+    }
+}

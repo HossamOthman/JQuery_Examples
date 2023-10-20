@@ -34,3 +34,18 @@
         height: 475px;
     }
 }
+
+/* movie page*/ 
+.thumbnail img{
+    object-fit: cover;
+}
+
+.row{
+    display: flex;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+.well{
+    display: block;
+    border: 3px solid red;
+}

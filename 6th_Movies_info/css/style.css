@@ -6,10 +6,8 @@
 #movies img, #movie img {
     width: 100%;
 }
-#movies .col-md-3 {
-    
-}
-#movies .col-md-3 .well {
+
+#movies>.col-md-3>.well {
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -35,17 +33,3 @@
     }
 }
 
-/* movie page*/ 
-.thumbnail img{
-    object-fit: cover;
-}
-
-.row{
-    display: flex;
-    border: 1px solid white;
-    margin-top: 10px;
-}
-.well{
-    display: block;
-    border: 3px solid red;
-}

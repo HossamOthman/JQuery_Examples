@@ -1,0 +1,30 @@
+/* movie page*/ 
+
+
+.info-upper{
+    margin: 10px 0 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cccccc33;
+    border-radius: 9px;
+    
+}
+
+.col-md-4{
+    height: 100%;
+}
+.thumbnail {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.info-lower{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #cccccc33;
+    border-radius: 9px;
+    
+}

@@ -54,7 +54,7 @@ let getMovie =  async function() {
 
             output += `
             <div class="row">
-                <div class="well">
+                <div class="info-upper">
                     <div class="col-md-4">
                         <img src="${data.Poster}" class="thumbnail">
                     </div>
@@ -93,7 +93,7 @@ let getMovie =  async function() {
                 </div>
             </div>
             <div class="row">
-                <div class="info">
+                <div class="info-lower">
                     <h3>Plot</h3>
                     ${data.Plot}
                     <hr>

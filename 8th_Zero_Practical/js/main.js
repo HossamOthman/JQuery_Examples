@@ -7,8 +7,6 @@ $(() => {
         $('html, body').animate({
             scrollTop: $('#' + e.target.getAttribute('data-scroll')).offset().top
         }, 500)
-        getattribute(e)
-        window.console.log('#' + e.target.getAttribute('data-scroll'));
     })
 
      // smooth scroll to top
@@ -17,5 +15,14 @@ $(() => {
         $('html, body').animate({
             scrollTop: $('.navbar').offset().top
         }, 150)
+    })
+
+    // calculate body padding depending on navbar height
+    $('body').css('paddingTop', $('.navbar').innerHeight() + 40)
+
+    // add active class on navbar link and remove from siblings
+    $('.navbar li').click((e) => {
+        
+        $($(e.currentTarget)).addClass('active').siblings().removeClass('active');
     })
 })

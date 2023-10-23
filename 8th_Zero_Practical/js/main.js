@@ -10,19 +10,44 @@ $(() => {
     })
 
      // smooth scroll to top
-     $('.block span').on('click', (e) => {
+     $('.head-container span').on('click', (e) => {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $('.navbar').offset().top
-        }, 150)
+            scrollTop: 0
+        }, 150);
     })
 
     // calculate body padding depending on navbar height
-    $('body').css('paddingTop', $('.navbar').innerHeight() + 40)
+    $('body').css('paddingTop', $('.navbar').innerHeight());
+    $('body').css('paddingBottom', 25)
 
     // add active class on navbar link and remove from siblings
     $('.navbar li').click((e) => {
         
         $($(e.currentTarget)).addClass('active').siblings().removeClass('active');
+    })
+
+    // sync navbar links with sections
+    $(window).scroll(() => {
+        
+        const blocks = document.querySelectorAll('.block');
+
+        var blocksArr = $.map((blocks), (block, i) => {
+            const blockTop = block.offsetTop;
+            const blockHeight = block.clientHeight;
+
+            if(scrollY > (blockTop - 500 )) {
+                var blockIDs =  block.getAttribute('id');
+                return blockIDs
+              }
+        })
+
+        var currentBlock = blocksArr[blocksArr.length-1];
+        
+            $('.navbar li #n' + currentBlock).addClass('active')
+            console.log('.navbar li #n' + currentBlock)
+        
+        
+        // .siblings().removeClass('active');
     })
 })
